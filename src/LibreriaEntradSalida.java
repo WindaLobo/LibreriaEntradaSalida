@@ -11,9 +11,6 @@ public class LibreriaEntradSalida {
      *
      * @param mensaje cadena que queremos introducir;
      * @param opcion  dispositivo de salida ventana (SALIDA_CONSOLA) o consola (SALIDA_WINDOW);
-     * @return si es true Y si no false;
-     * @return creamos un metodo que recibe un string devuelve un string
-     * @return creamos un metodo que recibe un entero y devuelve un entero
      */
     public static void salida(String mensaje, int opcion) {
         switch (opcion) {
@@ -25,6 +22,13 @@ public class LibreriaEntradSalida {
                 break;
         }
     }
+
+    /**
+     *
+     * @param comentario
+     * @param opcion
+     * @return
+     */
 
     public static String entradaString(String comentario, int opcion) {
         switch (opcion) {
@@ -38,6 +42,14 @@ public class LibreriaEntradSalida {
         }
         return null;
     }
+
+    /**
+     *
+     * @param comentario
+     * @param opcion
+     * @return
+     * @throws Exception
+     */
 
     public static Integer recibeInt(String comentario, int opcion) throws Exception {
         try {
@@ -54,6 +66,14 @@ public class LibreriaEntradSalida {
         }
         return null;
     }
+
+    /**
+     *
+     * @param comentario
+     * @param opcion
+     * @return
+     * @throws Exception
+     */
 
     public static Float recibefloat(String comentario, int opcion) throws Exception {
         try {
